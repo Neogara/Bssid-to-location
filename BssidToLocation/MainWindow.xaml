@@ -1,0 +1,16 @@
+﻿<Window x:Class="BssidToLocation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BssidToLocation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="790" Width="996.333">
+    <Grid >
+        <TextBox x:Name="BssidText" Text="EnterBssid" Margin="10,22,0,0" Width="150" Height="30" HorizontalAlignment="Left" HorizontalContentAlignment="Center" AutomationProperties.HelpText="enter BSSID" VerticalContentAlignment="Center" VerticalAlignment="Top"/>
+        <Button x:Name="FindLocation" Content="Check Location" Margin="10,81,0,0" Click="FindLocation_Click" Width="150" Height="30" HorizontalAlignment="Left" VerticalContentAlignment="Center" VerticalAlignment="Top" HorizontalContentAlignment="Center" ></Button>
+        <TextBox x:Name="LocationText" Text="location" Margin="10,116,0,0"  Width="150" HorizontalAlignment="Left" Height="30" VerticalContentAlignment="Center" VerticalAlignment="Top" HorizontalContentAlignment="Center" AutomationProperties.HelpText="generate location"/>
+        <WebBrowser x:Name="Web" Margin="170,10,10,10" MinWidth="500" MinHeight="500"/>
+
+    </Grid>
+</Window>
